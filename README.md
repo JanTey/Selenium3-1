@@ -1,3 +1,4 @@
+[![Java CI with Gradle](https://github.com/JanTey/Selenium3-1/actions/workflows/gradle.yml/badge.svg)](https://github.com/JanTey/Selenium3-1/actions/workflows/gradle.yml)
 # Домашнее задание к занятию «3. Тестирование веб-интерфейсов»
 
 В качестве результата пришлите ссылку на ваш GitHub-проект в личном кабинете студента на сайте [netology.ru](https://netology.ru).
