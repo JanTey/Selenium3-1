@@ -27,13 +27,14 @@ public class CallBackTest {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
         options.addArguments("--headless");
-        options.addArguments("--remote-allow-origins=*");
+        //options.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(options);
-        driver.get("http://localhost:9999");
+        //driver.get("http://localhost:9999");
+        
     }
 
     @AfterEach
-    void tearDown() {
+    static void tearDown() {
         driver.quit();
         driver = null;
     }
