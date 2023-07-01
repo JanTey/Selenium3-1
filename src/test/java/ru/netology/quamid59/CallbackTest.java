@@ -1,21 +1,20 @@
 package ru.netology.quamid59;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CallbackTest {
+public class CallBackTest {
     private WebDriver driver;
 
     @BeforeAll
     static void setUpAll() {
         WebDriverManager.chromedriver().setup();
-        
     }
 
     @BeforeEach
@@ -24,9 +23,9 @@ class CallbackTest {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
         options.addArguments("--headless");
-        driver = new ChromeDriver();
+        options.addArguments("--remote-allow-origins=*");
+        driver = new ChromeDriver(options);
         driver.get("http://localhost:9999");
-
     }
 
     @AfterEach
