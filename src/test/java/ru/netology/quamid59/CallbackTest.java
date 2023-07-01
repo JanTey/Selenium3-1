@@ -18,13 +18,13 @@ public class CallBackTest {
     }
 
     @BeforeEach
-    void setUp() {
+    void setupTest() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
         options.addArguments("--headless");
         options.addArguments("--remote-allow-origins=*");
-        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
         driver.get("http://localhost:9999");
     }
 
