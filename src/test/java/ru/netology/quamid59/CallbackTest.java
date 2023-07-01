@@ -35,7 +35,7 @@ public class CallBackTest {
     }
 
     @Test
-    void cardForm() throws InterruptedException {
+    void cardForm() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иван Дорофеев");
         //Thread.sleep(1000);
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+70001110000");
