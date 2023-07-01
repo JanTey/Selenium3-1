@@ -31,4 +31,4 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build witch Gradle
-      run: ./gradlew test -Selenide.headless=true --info
+      run: ./gradlew test --info
