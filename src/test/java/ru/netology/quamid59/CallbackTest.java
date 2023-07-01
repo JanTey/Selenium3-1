@@ -28,7 +28,7 @@ public class CallBackTest {
         options.addArguments("--no-sandbox");
         options.addArguments("--headless");
         options.addArguments("--remote-allow-origins=*");
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         driver.get("http://localhost:9999");
     }
 
