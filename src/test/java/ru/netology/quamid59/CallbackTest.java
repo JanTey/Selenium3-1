@@ -34,7 +34,7 @@ public class CallBackTest {
     }
 
     @AfterEach
-    static void tearDown() {
+    void tearDown() {
         driver.quit();
         driver = null;
     }
